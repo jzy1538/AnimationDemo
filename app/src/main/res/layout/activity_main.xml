@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#ee693f"
+        android:text="加入购物车"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+    <ImageView
+        android:id="@+id/iv_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dip"
+        android:padding="5dip"
+        android:src="@drawable/shopping_cat_green"/>
+
+    <ImageView
+        android:id="@+id/iv_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dot_orange"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="42dp"
+        android:visibility="invisible"/>
+</RelativeLayout>
