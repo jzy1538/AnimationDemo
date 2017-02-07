@@ -88,10 +88,20 @@ public class MainActivity extends AppCompatActivity{
                  *  坐标 y = a*x*x + b*x + c
                  */
                 float y = mValue[0] * x * x + mValue[1] * x + mValue[2];
-                Log.d(TAG, "x = " + x + ",y = " + y);
+//                Log.d(TAG, "x = " + x + ",y = " + y);
 
+                /**
+                 * 这里需要注意的是view的坐标设置只能用setX()函数,不能用setLeft()
+                 * setX():设置坐标,从而改变view的位置 setLeft():设置左边距,从而改变view的大小不改变位置
+                 * 而且getLeft()的返回值是原始左上角的位置信息,其值不会发生改变
+                 */
                 mIvBall.setX(x);
                 mIvBall.setY(y);
+                int left = mIvBall.getLeft();
+                int top = mIvBall.getTop();
+                float x1 = mIvBall.getX();
+                float y1 = mIvBall.getY();
+                Log.d(TAG, "onAnimationUpdate left = " + left + ",top = " + top + ",x = " + x1 + ",y = " + y1);
             }
         });
 
