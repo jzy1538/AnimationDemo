@@ -131,10 +131,12 @@ public class MainActivity extends AppCompatActivity{
 
 
     /**
-     * 计算抛物线公式参数
+     * 计算抛物线公式参数 自己瞎算的 =. =
      * a = (y1 * (x2 - x3) + y2 * (x3 - x1) + y3 * (x1 - x2)) / (x1 * x1 * (x2 -
-     * x3) + x2 * x2 * (x3 - x1) + x3 * x3 * (x1 - x2))
+     * x3) + x2 * x2 * (x3 - x1) + x3 * x3 * (x1 - x2));
+     *
      * b = (y1 - y2) / (x1 - x2) - a * (x1 + x2);
+     *
      * c = y1 - (x1 * x1) * a - x1 * b;
      */
     public static float[] calculate(float[][] points) {
